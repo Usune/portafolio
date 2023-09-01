@@ -3,7 +3,6 @@
 const mostrarOcultar = (event) => {
 
     let element = document.querySelector(event.target.getAttribute('enlace'));
-    console.log(element);
 
     if (element != null) {
         element.classList.toggle('show');
@@ -28,8 +27,6 @@ function cambiarColor(){
             document.documentElement.style.setProperty('--footer', '#444444');
             document.getElementById("modo").src = 'img/sun.svg';
             document.getElementById("btnMenu").src = 'img/menuClaro.svg';
-
-            console.log('ModoOscuro');
         } else {
             document.documentElement.style.setProperty('--rosa', '#F4E7E3');
             document.documentElement.style.setProperty('--verdeClaro', '#C8DBCD');
@@ -42,7 +39,6 @@ function cambiarColor(){
             document.documentElement.style.setProperty('--footer', '#e0e0e0');
             document.getElementById("modo").src = 'img/moon.svg';
             document.getElementById("btnMenu").src = 'img/menu.svg';
-            console.log('ModoClaro');
         }
 
         color = !color;
