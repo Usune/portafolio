@@ -1,0 +1,1065 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500&display=swap');
+
+/* https://michalsnik.github.io/aos/ */
+
+:root {
+    --rosa: #F4E7E3;
+    --verdeClaro: #C8DBCD;
+    --verde: #ACC4C0;
+    --verdeOscuro: #7E998D;
+    --blanco: #fefdfc;
+    --letra: #121218;
+    --fondoRosa: #F4E7E3;
+    --footer: #e0e0e0;
+}
+
+/* Sección general */
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: var(--blanco);
+}
+
+a {
+    color: var(--letra);
+}
+
+h1 {
+    color: var(--letra)
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--letra);
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--letra);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--letra);
+}
+
+p {
+    font-size: 18px;
+    color: var(--letra);
+}
+
+.fila {
+    display: flex;
+}
+
+.fila-bloque {
+    display: flex;
+}
+/* Fin sección general */
+
+/* Figuras decoración */
+.circulo1 {
+    background-color: var(--verde);
+    position: absolute;
+    z-index: 1;
+    width: 590px;
+    height: 590px;
+    clip-path: circle(50% at 8% 8%);
+}
+
+.cont-pentagono {
+    width: 80vw;
+    max-width: 1500px;
+    min-width: 500px;
+    position: absolute;
+}
+
+.pentagono {
+    position: relative;
+    width: 10vw;
+    height: 17vw;
+    max-width: 300px;
+    max-height: 340px;
+    min-width: 100px;
+    min-height: 170px;
+    bottom: 8vw;
+    left: 15%;
+    background-color: var(--verdeOscuro);
+    z-index: 2;
+    transform: rotate(30deg);
+    border-radius: 20px / 10px;
+}
+
+.pentagono::after,
+.pentagono::before {
+    content: '';
+    position: absolute;
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: var(--verdeOscuro);
+    border-radius: inherit;
+}
+
+.pentagono::after {
+    transform: rotate(60deg);
+}
+
+.pentagono::before {
+    transform: rotate(-60deg);
+}
+
+.cont-circulo {
+    width: 80vw;
+    max-width: 1500px;
+    position: absolute;    
+}
+
+.circulo2 {
+    position: absolute;
+    right: 0;
+    background-color: var(--verdeClaro);
+    z-index: 1;
+    width: 50vw;
+    height: 50vw;
+    max-width: 600px;
+    max-height: 600px;
+    clip-path: circle(50% at 100%);
+}
+
+.cont-circulo {
+    width: 80vw;
+    max-width: 1500px;
+    position: absolute;    
+}
+
+.cont-circulo2 {
+    width: 80vw;
+    max-width: 1500px;
+    position: absolute;
+    height: 500px;
+}
+
+.circulo3 {
+    position: absolute;
+    left: 0;
+    background-color: var(--verde);
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    clip-path: circle(50% at 8% 8%);
+}
+
+.circulo4 {
+    position: absolute;
+    right: 0;
+    background-color: var(--verde);
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    clip-path: circle(50% at 90% 90%);
+}
+
+.prueba {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: red;
+    box-sizing: border-box;
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+/*Fin Figuras decoración */
+
+/* Estilos header */
+header {
+    width: 80vw;
+    background-color: var(--fondoRosa);
+    margin: auto;
+    max-width: 1500px;
+    min-width: 500px;
+    height: 80vh;
+    min-height: 900px;
+    max-height: 1020px;
+}
+
+nav {
+    justify-content: end;
+    align-items: center;
+    width: 80vw;
+    /* min-width: 500px; */
+    max-width: 1500px;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 100;
+    background-color: var(--fondoRosa);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.1s;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid var(--letra);
+    font-weight: bold;
+}
+
+nav button {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+nav button:hover {
+    background-color: #dabcb5;
+}
+
+nav .desplegar {
+    display: none;
+}
+
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    min-height: 900px;
+    max-height: 1020px;
+    width: 80vw;
+    max-width: 1500px;
+    /* min-width: 500px; */
+    z-index: 5;
+}
+
+.foto {
+    width: 400px;
+    height: 535px;
+    border-radius: 40px;
+    z-index: 8;
+    background-color: var(--verdeClaro);
+}
+
+.foto img {
+    position: relative;
+    width: 400px;
+    border-radius: 40px;
+    bottom: 30px;
+    left: 30px;
+    transition: 0.6s;
+}
+
+.foto img:hover {
+    bottom: 0px;
+    left: 0px;
+}
+
+.nombre {
+    padding: 100px 40px 50px 0px;
+}
+
+.nombre h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nombre p {
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 550;
+}
+/* Fin Estilos header */
+
+main {
+    width: 80vw;
+    margin: auto;
+    max-width: 1500px;
+    /* min-width: 460px; */
+}
+
+/* Estilos sección perfil */
+#perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    height: 80vh;
+    min-height: 900px;
+    max-height: 1020px;
+    width: 80vw;
+    /* min-width: 500px; */
+    max-width: 1500px;
+    margin: auto;
+}
+
+#perfil h2 {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    z-index: 5;
+}
+
+.cont-perfil {
+    margin: 0px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-foto {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-perfil p {
+    width: 50%;
+    max-width: 500px;
+    padding: 0 20px 0 30px;
+    z-index: 5;
+}
+
+.imagenPer {
+    width: 700px;
+    height: 500px;
+    clip-path: circle();
+    background-color: var(--rosa);
+    z-index: 5;
+}
+
+.imagenPer img {
+    clip-path: circle();
+    width: 700px;
+    position: relative;
+    top: 30px;
+    right: 17px;
+}
+/* Fin Estilos sección perfil */
+
+/* Estilos sección estudios */
+#estudios {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoRosa); 
+    height: 80vh;
+    min-height: 700px;
+    max-height: 800px;
+    width: 80vw;
+    max-width: 1500px;
+}
+
+.cont-estudios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    width: 50%;
+}
+
+.cont-estudios h2 {
+    margin-bottom: 40px;
+}
+
+.card-estudios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 30px 0;
+}
+
+.imagenEstu {
+    width: 400px;
+    height: 500px;
+    border-radius: 40px;
+    z-index: 8;
+    background-color: var(--verdeClaro);
+    margin: 50px 70px 0 40px;
+}
+
+.imagenEstu img {
+    position: relative;
+    width: 400px;
+    border-radius: 40px;
+    bottom: 30px;
+    left: 30px;
+}
+/* Fin Estilos sección estudios */
+
+/* Estilos sección habilidades */
+#habilidades {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco); 
+    height: 40vh;
+    min-height: 500px;
+    max-height: 1020px;
+    width: 80vw;
+    max-width: 1500px;
+    margin: auto;    
+}
+
+#habilidades h2 {
+    margin-bottom: 40px;
+    z-index: 10;
+}
+
+.cont-habilidades {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-habilidades .durasBlandas {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+}
+
+.cont-habilidades .durasBlandas h3{
+    margin-bottom: 20px;
+}
+
+.cont-habilidades .durasBlandas p{
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 40px;
+}
+
+.cont-habilidades .durasBlandas p:hover{
+    transform: scale(1.1);
+}
+/* Fin Estilos sección habilidades */
+
+/* Estilos sección portafolio */
+#portafolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondoRosa);
+    height: 60vh;
+    min-height: 700px;
+    max-height: 1020px;
+    width: 80vw;
+    max-width: 1500px;
+    margin: auto;
+}
+
+#portafolio h2 {
+    margin-bottom: 40px;
+}
+
+.imagenPorta {
+    width: 400px;
+    height: 500px;
+    background-color: var(--verdeClaro);
+    border-radius: 40px;
+}
+
+.imagenPorta img {
+    position: relative;
+    width: 400px;
+    border-radius: 40px;
+    bottom: 30px;
+    right: 30px;
+}
+
+.cont-portafolio {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.proyectos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-portafolio {
+    width: 280px;
+    margin: 20px 10px;
+    padding: 30px;
+    background-color: var(--blanco);
+    opacity: 0.9;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.card-portafolio:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.card-portafolio h3{
+    font-size: 22px;
+}
+
+
+.card-portafolio h4{
+    font-size: 18px;
+    margin: 10px 0px;
+    text-align: justify;    
+}
+
+.card-portafolio p{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.card-portafolio .enlace {
+    text-align: end;
+}
+
+.card-portafolio a {
+    margin: 10px 0px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--letra);
+    border: 2px solid var(--verdeClaro);
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.card-portafolio a:hover {
+    background-color: var(--verdeClaro);
+}
+/* Fin Estilos sección portafolio */
+
+/* Estilos sección cantácto */
+#contacto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanco);
+    height: 30vh;
+    min-height: 300px;
+    max-height: 500px;
+    width: 80vw;
+    max-width: 1500px;
+    margin: auto;
+}
+
+#contacto h2 {
+    margin-bottom: 40px;
+}
+
+.cont-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont-contacto hr {
+    width: 50%;
+    margin: auto;
+    border: 1px solid var(--letra);
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.info p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size: 20px; */
+}
+
+.info p img{
+    margin-right: 20px;
+    width: 30px;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces a {
+    border-radius: 20px;
+    margin: 40px 10px 0px 10px;
+}
+
+.enlaces a:hover {
+    background-color: var(--rosa);
+}
+
+.enlaces a img {
+    width: 40px;
+    padding: 10px;
+}
+/* Fin Estilos sección cantácto */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 100px;
+    margin: auto;
+    max-width: 1500px;
+    text-align: center;
+    background-color: var(--footer);
+}
+
+/* Estilos tabletas */
+@media (max-width: 1200px) {
+
+    /* Sección general */
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .fila-bloque {
+        flex-direction: column;
+    }
+    /* Fin Sección general */
+    
+    /* Figuras decoración */
+    .cont-circulo {
+        width: 99vw;
+    }
+
+    .cont-circulo2 {
+        width: 99vw;
+    }
+
+    .circulo2 {
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    .cont-pentagono {
+        width: 99vw;
+    }
+    
+    .pentagono {
+        transition: 0.5s;
+        bottom: 100px;
+    }
+    
+    .circulo1 {
+        width: 400px;
+        height: 400px;
+        transition: 0.5s;
+    }
+    /* Fin Figuras decoración */
+
+    /* Estilos header */
+    header {
+        width: 99vw;
+        min-width: 300px;
+    }
+
+    nav {
+        width: 99vw;
+        min-width: 300px;
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        top: 60px;
+        right: 10px;
+        background-color: var(--fondoRosa);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding-bottom: 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    nav button {
+        margin-left: 10px;
+    }
+
+    nav #menu {
+        display: none;
+        transition: 5s;
+    }
+
+    nav .desplegar {
+        display: block;
+    }
+
+    #hero {
+        width: 100%;
+        min-width: 300px;
+        transition: 0.5s;
+    }
+
+    .nombre {
+        padding-top: 0;
+    }
+
+    .foto {
+        width: 350px;
+        height: 468px;
+        transition: 0.5s;
+    }
+
+    .foto img {
+        width: 350px;
+        transition: 0.5s;
+    }
+    /*Fin Estilos header */
+
+    main {
+        width: 99vw;
+        transition: 0.5s;
+    }
+
+    /* Estilos sección perfil */
+    #perfil {
+        width: 100%;
+    }
+
+    .cont-perfil {
+        margin: 0px
+    }
+    
+    .cont-perfil p {
+        padding: 0px;
+        width: 98vw;
+        min-width: 300px;
+        margin: 40px 20px 0px 20px;
+    }
+
+    .cont-foto {
+        width: 100%;
+    }
+
+    .imagenPer {
+        width: 600px;
+        height: 430px;
+    }
+    
+    .imagenPer img {
+        width: 600px;
+        top: 30px;
+        right: 17px;
+    }
+    /* Fin Estilos sección perfil */
+
+    /* Estilos sección estudios */
+    #estudios {
+        width: 100%;
+        min-height: 900px;
+    }
+    
+    .card-estudios {
+        padding: 0px;
+        min-width: 430px;
+    }
+    
+    .cont-estudios h2 {
+        margin-bottom: 20px;
+    }
+    
+    .imagenEstu {
+        width: 350px;
+        height: 437px;
+        margin-top: 50px;
+    }
+    
+    .imagenEstu img {
+        width: 350px;
+    }
+    /* Fin Estilos sección estudios */
+
+    /* Estilos sección habilidades */
+    #habilidades {
+        width: 100%;
+    }
+    /* Fin Estilos sección habilidades */
+
+    /* Estilos sección portafolio */
+    #portafolio {
+        width: 100%;
+        height: 900px;
+    }
+
+    #portafolio h2 {
+        margin-bottom: 70px;
+    }
+
+    .imagenPorta {
+        width: 350px;
+        height: 437px;
+    }
+    
+    .imagenPorta img {
+        width: 350px;
+    }
+
+    .proyectos {
+        flex-direction: row;
+    }
+
+    .card-portafolio {
+        width: 280px;
+        height: 180px;
+    }
+
+    .card-portafolio h3{
+        font-size: 20px;
+    }
+    
+    
+    .card-portafolio h4{
+        font-size: 16px; 
+    }
+    
+    .card-portafolio p{
+        font-size: 14px;
+    }
+    /* Fin Estilos portafolio */
+
+    /* Estilos Contácto */
+    #contacto {
+        width: 100%;
+        height:400px;
+    }
+
+    #contacto h2 {
+        margin-bottom: 30px;
+    }
+
+    .info p {
+        margin-top: 20px;
+    }
+    /* Fin Estilos Contácto */
+
+    footer {
+        width: 99vw;
+        transition: 0.5s;
+    }
+
+}
+
+/* Estilo celulares */
+@media (max-width: 620px){
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .cont-circulo {
+        display: none;
+    }
+
+    .circulo3 {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .circulo4 {
+        width: 280px;
+        height: 280px;
+        top: 220px;
+    }
+
+    header {
+        width: 99vw;
+        min-width: 350px;
+    }
+
+    .imagenPer {
+        width: 600px;
+        height: 430px;
+    }
+    
+    .imagenPer img {
+        width: 600px;
+        top: 30px;
+        right: 17px;
+    }
+
+    .foto {
+        width: 290px;
+        height: 388px;
+        transition: 0.5s;
+    }
+
+    .foto img {
+        width: 290px;
+        transition: 0.5s;
+        bottom: 30px;
+        left: 30px;
+    }
+
+    .nombre h1 {
+        font-size: 30px;
+    }
+    
+    .cont-perfil p {
+        width: 90vw;
+        text-align: justify;
+    }
+    
+    .cont-estudios {
+        margin-left: 0;
+    }
+    
+    .card-estudios {
+        padding: 0px;
+        min-width: 300px;
+    }
+    
+    .imagenEstu {
+        width: 300px;
+        height: 375px;
+        margin-top: 50px;
+    }
+    
+    .imagenEstu img {
+        width: 300px;
+    }
+
+    .imagenPer {
+        width: 500px;
+        height: 360px;
+    }
+    
+    .imagenPer img {
+        width: 500px;
+        top: 30px;
+        right: 17px;
+    }
+
+    /* Estilos portafolio */
+    #portafolio {
+        max-height: none;
+        height: 1100px;
+    }
+
+    .imagenPorta {
+        width: 300px;
+        height: 374px;
+    }
+    
+    .imagenPorta img {
+        width: 300px;
+    }
+
+    .proyectos {
+        flex-direction: column;
+    }
+
+    .card-portafolio {
+        width: 280px;
+    }
+
+    .card-portafolio h3{
+        font-size: 20px;
+    }
+    
+    
+    .card-portafolio h4{
+        font-size: 16px; 
+    }
+    
+    .card-portafolio p{
+        font-size: 14px;
+    }
+    /* Fin Estilos portafolio */
+
+}
+
+
+.show {
+    display: block !important;
+}

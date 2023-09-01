@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/control.js"></script>
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="circulo1"></div>
+        <nav class="fila">
+            <div id="menu">
+                <ul class="fila">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#estudios">Estudios</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contáctame</a></li>
+                </ul>
+            </div>
+            <button type="button" id="cambiarColor"><img id="modo" src="img/moon.svg" alt="Luna"></button>
+            <button type="button" enlace="#menu" class="desplegar"><img id="btnMenu" src="img/menu.svg" alt="menu"
+                    enlace="#menu"></button>
+        </nav>
+
+        <div id="hero">
+            <div class="fila-bloque">
+                <div class="nombre">
+                    <h1 data-aos="fade-down" data-aos-duration="1500">Estefani Arenas</h1>
+                    <p data-aos="fade-down" data-aos-duration="1000">Web Developer</p>
+                </div>
+                <div class="foto" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <img src="img/retrato.jpeg" alt="foto">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="cont-circulo">
+            <div class="circulo2"></div>
+        </div>
+
+        <div class="cont-pentagono">
+            <div class="pentagono"></div>
+        </div>
+
+        <section id="perfil">
+
+                <h2>Perfil profesional</h2>
+
+                <div class="fila-bloque cont-perfil">
+
+                    <div class="cont-foto" data-aos="fade-down-right" data-aos-duration="2000">
+                        <div class="imagenPer">
+                            <img src="img/imgPerfil.jpg" alt="foto">
+                        </div>
+                    </div>
+                    
+                    <p>Capacidad para diseñar, desarrollar, instalar y mantener sistemas informáticos, así como también para interpretar los requerimientos del usuario y realizar el desarrollo u puestas  en parcha de los sistemas requeridos. Realizar pruebas de software, dar soporte técnico y orientar a otros usuarios en el uso de los sistemas diseñados.</p>
+
+                </div>
+
+        </section>
+
+        <section id="estudios" class="fila-bloque">
+            <div class="cont-estudios">
+                <h2>Estudios</h2>
+                <div class="card-estudios">
+                    <h3>Análisis y desarrollo de software</h3>
+                    <h4>SENA</h4>
+                    <p>Abril, 2022 - HAsta la fecha</p>
+                </div>
+                <div class="card-estudios">
+                    <h3>Dearrollo móvil en línea</h3>
+                    <h4>Capacitate para el empleo</h4>
+                    <p>Junio, 2023</p>
+                </div>
+                <div class="card-estudios">
+                    <h3>Análisis y desarrollo de software</h3>
+                    <h4>Capacitate para el empleo</h4>
+                    <p>Junio, 2023</p>
+                </div>
+            </div>
+            <div class="imagenEstu" data-aos="fade-up-left" data-aos-duration="1000">
+                <img src="img/imgEstudios.jpg" alt="Foto">
+            </div>
+        </section>
+
+        <div class="cont-circulo2">
+            <div class="circulo3"></div>
+            <div class="circulo4"></div>
+        </div>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="fila cont-habilidades">
+                <div class="durasBlandas" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Duras</h3>
+                    
+                    <!-- morado palida -->
+                    <p>php</p>
+                    <p>JavaScript</p>
+                    <p>MySQL</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <div class="durasBlandas" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Blandas</h3>
+                    <p>Proactividad</p>
+                    <p>Planificación</p>
+                    <p>Resolución de conflictos</p>
+                    <p>Organización</p>
+                    <p>Adaptabilidad</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio">
+            <h2>Portafolio</h2>
+            <div class="fila-bloque cont-portafolio">
+                <div class="imagenPorta" data-aos="fade-up-right" data-aos-duration="1000">
+                    <img src="img/imgPortafolio.jpg" alt="foto">
+                </div>
+                <div class="proyectos">
+                    <div class="card-portafolio">
+                        <h3>EasyTrip</h3>
+                        <h4>Desarrolladora frontend de la página principal del proyecto EasyTrip.</h4>
+                        <p>Bootstrap</p>
+                        <div class="enlace">
+                            <a href="https://usune.github.io/EasyTrip/" target="_blank">Visitar página</a>
+                        </div>
+                    </div>
+
+                    <div class="card-portafolio">
+                        <h3>SchoolBoard</h3>
+                        <h4>Desarrolladora frontend y backend del proyecto SchoolBoard</h4>
+                        <p>JS, php, MySQL, HTML y CSS</p>
+                        <div class="enlace">
+                            <a href="#">Visitar página</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <div class="cont-contacto">
+                <div class="fila-bloque info">
+                    <p><img src="img/mail.svg" alt="Correo">yuraniester@gmail.com</p>
+                    <p><img src="img/phone.svg" alt="Celular">+57 350 6798272</p>
+                </div>
+                <hr>
+                <div class="enlaces">
+                    <a href="https://github.com/Usune" target="_blank"><img src="img/github.svg" alt="GitHub"></a>
+                    <a href="#" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/usune_/?theme=dark" target="_blank"><img src="img/instagram.svg" alt="instagram"></a>
+                    <a href="https://wa.link/fue0ww" target="_blank"><img src="img/whatsapp.svg" alt="whatsapp"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;2023 - Estefani Arenas</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</body>
+
+</html>
